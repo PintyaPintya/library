@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Library</h1>
+    <main></main>
+    <button id="addBook" type="button">Add Book</button>
+    <script type="text/javascript" src="main.js" defer></script>
+    <dialog>
+        <form onsubmit="random()">
+            <div>
+                <label for="title">Title</label required>
+                <input type="text" name="title" id="title" required>
+            </div>
+            <div>
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author" required>
+            </div>
+            <div>
+                <label for="pages">Pages</label>
+                <input type="number" name="pages" id="pages" required>
+            </div>           
+            <div>
+                <input type="checkbox" name="read" id="read">
+                <label for="read">Mark as read</label>
+            </div>      
+            <button id="confirm" type="submit">Confirm</button>   
+            <button id="cancel" type="button">Cancel</button>                 
+        </form>              
+    </dialog>
+    <footer class="footer">
+        <p>
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear())
+          </script>          
+          <a href="https://github.com/pintyapintya" target="_blank">pintyapintya</a>
+        </p>        
+    </footer>
+</body>
+</html>
