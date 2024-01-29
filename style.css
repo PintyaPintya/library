@@ -26,3 +26,7 @@ div{
 #addBook{
     margin-top: 20px;
 }
+.book-container{
+    background : pink;
+    border : 2px solid black;
+}

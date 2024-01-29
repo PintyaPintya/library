@@ -9,13 +9,13 @@
 </head>
 <body>
     <h1>Library</h1>
-    <main></main>
+    <main id="container"></main>
     <button id="addBook" type="button">Add Book</button>
     <script type="text/javascript" src="main.js" defer></script>
-    <dialog>
-        <form onsubmit="random()">
+    <dialog id="newBookDialog">
+        <form onsubmit="onPressSubmitBtn()">
             <div>
-                <label for="title">Title</label required>
+                <label for="title">Title</label>
                 <input type="text" name="title" id="title" required>
             </div>
             <div>
